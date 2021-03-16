@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package cls_04;
+
+message Student {
+    optional string name = 1;
+    optional string surname = 2;
+    optional string github_account = 3;
+}
+
+message StudentsDb {
+    repeated Student students = 1;
+}
